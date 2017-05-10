@@ -2,6 +2,7 @@
 import CoreLayout from '../layouts/CoreLayout'
 import Home from './Home'
 import CounterRoute from './Counter'
+import EditorRoute from './Editor'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -12,6 +13,7 @@ export const createRoutes = (store) => ({
   indexRoute  : Home,
   childRoutes : [
     CounterRoute(store)
+  , EditorRoute(store)
   ]
 })
 
